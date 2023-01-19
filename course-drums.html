@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!---------- Navigation Start ---------->
+    <nav>
+      <img src="img/ramey-logo.png" alt="Ramey" />
+      <div class="navigation">
+        <ul class="nav-list">
+          <i id="menu-close" class="fas fa-times"></i>
+          <li>
+            <a href="index.html"><i class="fa fa-home"></i>Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="active" href="category.html" class="dropdown_link"
+              ><i class="fa fa-layer-group"></i>Categories<i
+                class="fa fa-chevron-down dropdown_icon"
+              ></i
+            ></a>
+            <div class="megamenu">
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Development</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-code"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-front-end.html">Front-end Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon">
+                    <i class="fa fa-brackets-curly"></i>
+                  </div>
+                  <div class="megamenu_link">
+                    <a href="course-backend.html">Back-end Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-mobile"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-mobile.html">Mobile Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-gamepad"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-game.html">Game Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-database"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-sql.html">SQL Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Design</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-image"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-web-design.html">Web Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-palette"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-graphic-design.html">Graphic Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon">
+                    <i class="fa fa-vest-patches"></i>
+                  </div>
+                  <div class="megamenu_link">
+                    <a href="course-fashion-design.html">Fashion Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-building"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-architectura-design.html"
+                      >Architectural Design</a
+                    >
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-brush"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-interior-design.html">Interior Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Teaching</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-calculator"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-math.html">Math</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-atom"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-physic.html">Physics</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-vial"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-chemistry.html">Chemistry</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-dna"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-biology.html">Biology</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-telescope"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-astronomy.html">Astronomy</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Music</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-guitar"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-guitar.html">Guitar</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-drum"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-drums.html">Drums</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-piano"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-piano.html">Piano</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-saxophone"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-saxophone.html">Saxophone</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-violin"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-violin.html">Violin</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="about.html"><i class="fa fa-address-card"></i>About</a>
+          </li>
+
+          <li>
+            <a href="blog.html"><i class="fa fa-users"></i>Blog</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="shopping-card.html"><i class="fa fa-credit-card"></i></a>
+          </li>
+          <li>
+            <a href="log.sign.html"><i class="fa fa-user"></i></a>
+          </li>
+        </ul>
+        <div class="search-box">
+          <input type="text" placeholder="Type to search..." />
+          <div class="search-btn"><i class="fas fa-search"></i></div>
+          <div class="cansel-btn"><i class="fas fa-times"></i></div>
+          <div class="search-data"></div>
+        </div>
+        <img id="menu-btn" src="img/menu.png" alt="" />
+      </div>
+    </nav>
+    <!---------- Navigation End ---------->
+
+    <!---------- Course Start ---------->
+
+    <section id="about-home">
+      <h2>Music</h2>
+    </section>
+
+    <section id="course-inner">
+      <div class="overview">
+        <img
+          class="course-img"
+          src="img/Categories/Music/Drums/josh-sorenson-MjIMc6uhwrE-unsplash.jpg"
+          alt=""
+        />
+        <div class="course-head">
+          <div class="c-name">
+            <h2>Drums Course</h2>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>
+              Become a drummer with a step by step programme to get you from
+              being drumming novice to drumming expert.
+            </p>
+          </div>
+          <span>$9.99</span>
+        </div>
+        <h3>Instructor</h3>
+        <div class="tutor">
+          <img src="img/Categories/Music/Drums/1653211897972.jfif" alt="" />
+          <div class="tutor-det">
+            <h5>Antonio Fusco</h5>
+            <p>Drums Teacher</p>
+          </div>
+        </div>
+        <hr />
+        <h3>Course Overview</h3>
+        <p>
+          Hello and welcome to Learn to Play the Drums, a top seller on Udemy by
+          Billy Baker - Top 10% instructor on Udemy. If you've always wanted to
+          learn the drums this course is for you. Enrol now and I'll see you on
+          the inside!
+        </p>
+
+        <hr />
+        <h3>What you'll learn?</h3>
+        <div class="learn">
+          <p>
+            <i class="far fa-check-circle"></i>Learn different Rhythms that make
+            up everything we play on the drums.
+          </p>
+          <p>
+            <i class="far fa-check-circle"></i>Learn to play Rock Grooves -
+            Impress your friends with your excellent beats.
+          </p>
+          <p>
+            <i class="far fa-check-circle"></i>Learn different Styles of
+            Drumming - Latin, March, Blues, Reggae.
+          </p>
+          <p>
+            <i class="far fa-check-circle"></i>Learn to play Rudiments -
+            Patterns that are the building blocks of drumming.
+          </p>
+          <p>
+            <i class="far fa-check-circle"></i>Learn how to play along to
+            Popular Songs.
+          </p>
+          <p>
+            <i class="far fa-check-circle"></i>Learn Theory of Drum Music and
+            how to read Drum Notation.
+          </p>
+        </div>
+      </div>
+
+      <div class="enroll">
+        <h3>This course includes:</h3>
+        <p><i class="far fa-video"></i>12 hours video</p>
+        <p><i class="far fa-newspaper"></i>33 articles</p>
+        <p><i class="far fa-cloud-download"></i>Downloadable resources</p>
+        <p><i class="far fa-infinity"></i>Full lifetime access</p>
+        <p><i class="far fa-mobile-alt"></i>Access on mobile and TV</p>
+        <p><i class="far fa-paperclip"></i>Assignments</p>
+        <p><i class="far fa-trophy-alt"></i>Certificate of completion</p>
+        <div class="enroll-btn">
+          <a class="blue" href="#">Add to cart</a>
+        </div>
+      </div>
+    </section>
+
+    <!---------- Course End ---------->
+
+    <!---------- Footer Start ---------->
+
+    <footer>
+      <div class="footer-col">
+        <h3>Home Menu</h3>
+        <li>Categories</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </div>
+      <div class="footer-col">
+        <h3>Courses</h3>
+        <li>Development</li>
+        <li>Design</li>
+        <li>Teaching</li>
+        <li>Music</li>
+      </div>
+      <div class="footer-col">
+        <h3>Blog's themes</h3>
+        <li>Development</li>
+        <li>Design</li>
+        <li>Teaching</li>
+        <li>Music</li>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe us...</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email address" />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2022 All rights reserved | This template is made by Raquf
+          Mehdiyev
+        </p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!---------- Footer End ---------->
+
+    <!---------- JS Script Start ---------->
+
+    <script src="main.js"></script>
+
+    <!---------- JS Script End ---------->
+  </body>
+</html>

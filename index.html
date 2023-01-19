@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!---------- Navigation Start ---------->
+    <nav>
+      <img src="img/ramey-logo.png" alt="Ramey" />
+      <div class="navigation">
+        <ul class="nav-list">
+          <i id="menu-close" class="fas fa-times"></i>
+          <li>
+            <a class="active" href="index.html"
+              ><i class="fa fa-home"></i>Home</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a href="category.html" class="dropdown_link"
+              ><i class="fa fa-layer-group"></i>Categories<i
+                class="fa fa-chevron-down dropdown_icon"
+              ></i
+            ></a>
+            <div class="megamenu">
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Development</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-code"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-front-end.html">Front-end Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon">
+                    <i class="fa fa-brackets-curly"></i>
+                  </div>
+                  <div class="megamenu_link">
+                    <a href="course-backend.html">Back-end Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-mobile"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-mobile.html">Mobile Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-gamepad"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-game.html">Game Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-database"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-sql.html">SQL Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Design</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-image"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-web-design.html">Web Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-palette"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-graphic-design.html">Graphic Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon">
+                    <i class="fa fa-vest-patches"></i>
+                  </div>
+                  <div class="megamenu_link">
+                    <a href="course-fashion-design.html">Fashion Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-building"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-architectura-design.html"
+                      >Architectural Design</a
+                    >
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-brush"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-interior-design.html">Interior Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Teaching</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-calculator"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-math.html">Math</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-atom"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-physic.html">Physics</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-vial"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-chemistry.html">Chemistry</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-dna"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-biology.html">Biology</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-telescope"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-astronomy.html">Astronomy</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Music</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-guitar"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-guitar.html">Guitar</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-drum"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-drums.html">Drums</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-piano"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-piano.html">Piano</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-saxophone"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-saxophone.html">Saxophone</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-violin"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-violin.html">Violin</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="about.html"><i class="fa fa-address-card"></i>About</a>
+          </li>
+
+          <li>
+            <a href="blog.html"><i class="fa fa-users"></i>Blog</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="shopping-card.html"><i class="fa fa-credit-card"></i></a>
+          </li>
+          <li>
+            <a href="log.sign.html"><i class="fa fa-user"></i></a>
+          </li>
+        </ul>
+        <div class="search-box">
+          <input type="text" placeholder="Type to search..." />
+          <div class="search-btn"><i class="fas fa-search"></i></div>
+          <div class="cansel-btn"><i class="fas fa-times"></i></div>
+          <div class="search-data"></div>
+        </div>
+        <img id="menu-btn" src="img/menu.png" alt="" />
+      </div>
+    </nav>
+    <!---------- Navigation End ---------->
+
+    <!---------- Home Start ---------->
+    <section id="home">
+      <h2>Improve Your Future With Us</h2>
+      <p>
+        Our free courses provide you with an affordable and flexible way to
+        learn new skills and study new and emerging topics.
+      </p>
+      <div class="home-btn">
+        <a class="blue" href="about.html">Learn More</a>
+        <a class="yellow" href="category.html">Visit Courses</a>
+      </div>
+    </section>
+    <!---------- Home End ---------->
+
+    <!---------- Features Start ---------->
+
+    <section id="features">
+      <h1>Awersome Features</h1>
+      <p>
+        Upskill or pursue a passion with short courses across every subject,
+        whether you are a beginner or already an expert.
+      </p>
+      <div class="f_container">
+        <div class="f_card card-blue">
+          <div class="card_head">
+            <ion-icon name="school-outline"></ion-icon>
+            <div class="rounded_border">
+              <span class="circle"></span>
+            </div>
+          </div>
+          <div class="card_body">
+            <h3>Scholarship Facility</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="category.html" class="f_btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="f_card card-red">
+          <div class="card_head">
+            <ion-icon name="people-circle-outline"></ion-icon>
+            <div class="rounded_border">
+              <span class="circle"></span>
+            </div>
+          </div>
+          <div class="card_body">
+            <h3>Online Courses</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="category.html" class="f_btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="f_card card-green">
+          <div class="card_head">
+            <ion-icon name="ribbon-outline"></ion-icon>
+            <div class="rounded_border">
+              <span class="circle"></span>
+            </div>
+          </div>
+          <div class="card_body">
+            <h3>Global Certifications</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="category.html" class="f_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------- Features End ---------->
+
+    <!---------- Courses Start ---------->
+
+    <section id="course_sevice" class="course_sevice">
+      <h1 class="course_heading">Our <span>Courses</span></h1>
+      <div class="swiper course_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/front-end development.svg" alt="" />
+            <a href="course-front-end.html"
+              ><h3>Front-end Development Courses</h3></a
+            >
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/backend development.svg" alt="" />
+            <a href="course-backend.html"
+              ><h3>Back-end Development Courses</h3></a
+            >
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/mobile development.svg" alt="" />
+            <a href="course-mobile.html"><h3>Mobile Development Courses</h3></a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/game development.svg" alt="" />
+            <a href="course-game.html"><h3>Game Development Courses</h3></a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/sql development.svg" alt="" />
+            <a href="course-sql.html"><h3>SQL Development Courses</h3></a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/web design.svg" alt="" />
+            <a href="course-web-design.html"><h3>Web Design Courses</h3></a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/graphic design.svg" alt="" />
+            <a href="course-graphic-design.html"
+              ><h3>Graphic Design Courses</h3></a
+            >
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/fashion.svg" alt="" />
+            <a href="course-fashion-design.html"
+              ><h3>Fashion Design Courses</h3></a
+            >
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/architectural design.svg" alt="" />
+            <a href="course-architectura-design.html"
+              ><h3>Architectural Design Courses</h3></a
+            >
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/interior design.svg" alt="" />
+            <a href="course-interior-design.html"
+              ><h3>Interior Design Courses</h3></a
+            >
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/math.svg" alt="" />
+            <a href="course-math.html"><h3>Math Courses</h3></a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/physics.svg" alt="" />
+            <a href="course-physic.html"><h3>Physics Courses</h3></a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/chemistry.svg" alt="" />
+            <a href="course-chemistry.html"><h3>Chemistry Courses</h3></a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/biology.svg" alt="" />
+            <a href="course-biology.html"><h3>Biology Courses</h3></a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/astronomy.svg" alt="" />
+            <a href="course-astronomy.html"><h3>Astronomy Courses</h3></a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/guitar.svg" alt="" />
+            <a href="course-guitar.html"><h3>Guitar Courses</h3></a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Home/Courses/piano.svg" alt="" />
+            <a href="course-piano.html"><h3>Piano Courses</h3></a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!---------- Courses End ---------->
+
+    <!---------- Registration Start ---------->
+
+    <section id="registration">
+      <div class="reminder">
+        <p>Get 100 Online Courses for free</p>
+        <h1>Register to get it</h1>
+        <div class="time">
+          <div class="date">
+            20 <br />
+            Days
+          </div>
+          <div class="date">
+            23 <br />
+            Hours
+          </div>
+          <div class="date">
+            58 <br />
+            Minutes
+          </div>
+          <div class="date">
+            50 <br />
+            Seconds
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <h3>Create Free Acount Now!!!</h3>
+        <input type="text" placeholder="Name" name="" id="" />
+        <input type="text" placeholder="Email Adress" name="" id="" />
+        <input type="text" placeholder="Phone Number" name="" id="" />
+        <div class="form-btn">
+          <a class="yellow" href="#">Submit Form</a>
+        </div>
+      </div>
+    </section>
+
+    <!---------- Registration End ---------->
+
+    <!---------- Community Profiles Start ---------->
+
+    <section id="expert_sevice" class="expert_sevice">
+      <h1 class="expert_heading">Our <span>Experts</span></h1>
+      <div class="swiper expert_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Developer/Front-end/1664602986537.jfif"
+              alt=""
+            />
+            <h3>Agil Atakishiyev</h3>
+            <span class="exp_pos">Frontend Engineer</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Developer/Backend/1663683893415.jfif"
+              alt=""
+            />
+            <h3>Kamran Abdullayev</h3>
+            <span class="exp_pos">.NET Instructor</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Developer/Mobile/1649250473991.jfif"
+              alt=""
+            />
+            <h3>Zaur Mammadli</h3>
+            <span class="exp_pos"
+              >Head of Mobile Development and Implementation Unit</span
+            >
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Developer/Game/1659136210459.jfif"
+              alt=""
+            />
+            <h3>Azar Aliyev</h3>
+            <span class="exp_pos">Game Developer</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Categories/Developer/SQL/1636887959482.jfif" alt="" />
+            <h3>Yusif Guluzada</h3>
+            <span class="exp_pos">SQL Developer</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Categories/Design/Web/1661340435433.jfif" alt="" />
+            <h3>Vugar Hamzayev</h3>
+            <span class="exp_pos">UX/UI Designer</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Design/Graphic/1517627085935.jfif"
+              alt=""
+            />
+            <h3>Adil Isayev</h3>
+            <span class="exp_pos">Graphic Designer</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Design/Fashion/1658643596081.jfif"
+              alt=""
+            />
+            <h3>Amina Zaada</h3>
+            <span class="exp_pos">Fashion Designer</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Design/Architectura/1656329593980.jfif"
+              alt=""
+            />
+            <h3>Azer Shahbazov</h3>
+            <span class="exp_pos">Architectural designer</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Design/Interior/1671556040559.jfif"
+              alt=""
+            />
+            <h3>Vusal Aslanov</h3>
+            <span class="exp_pos">Interior designer</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Categories/Teaching/Math/1610275179008.jfif" alt="" />
+            <h3>Emil Babayev</h3>
+            <span class="exp_pos">A level, IB DP mathematics teacher</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Teaching/Physic/1630225819721.jfif"
+              alt=""
+            />
+            <h3>Igbala Veysalzade</h3>
+            <span class="exp_pos"
+              >Physics Teacher - Cambridge Lower and Upper Secondary program,
+              IB, IGCSE and A level</span
+            >
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Teaching/Chemistry/1641240028999.jfif"
+              alt=""
+            />
+            <h3>Sona Babayeva</h3>
+            <span class="exp_pos">Chemistry teacher/ Chemist</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Teaching/Biology/1621887187604.jfif"
+              alt=""
+            />
+            <h3>Parviz Ismayilov</h3>
+            <span class="exp_pos">IGCSE/AS/A/AP/IB Biology teacher</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Teaching/Astronomy/1591180106296.jfif"
+              alt=""
+            />
+            <h3>Nihad Habizada</h3>
+            <span class="exp_pos"
+              >NC Programming and Automation Intern - Turkish Aerospace |
+              Founder and Leader</span
+            >
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Categories/Music/Guitar/1614430079228.jfif" alt="" />
+            <h3>Astrit Kycyku</h3>
+            <span class="exp_pos">Guitar Teacher</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Categories/Music/Drums/1653211897972.jfif" alt="" />
+            <h3>Antonio Fusco</h3>
+            <span class="exp_pos">Drums Teacher</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Categories/Music/Piano/1642060135634.jfif" alt="" />
+            <h3>Ioanna Moudanioti</h3>
+            <span class="exp_pos">Piano Teacher</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img
+              src="img/Categories/Music/Saxophone/1516765457380.jfif"
+              alt=""
+            />
+            <h3>Marina Notaro</h3>
+            <span class="exp_pos">Saxophonist</span>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="img/Categories/Music/Violin/1642883032254.jfif" alt="" />
+            <h3>Buket Okten Topcubashi</h3>
+            <span class="exp_pos">Violin Teacher</span>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!---------- Community Profiles End ---------->
+
+    <!---------- Footer Start ---------->
+
+    <footer>
+      <div class="footer-col">
+        <h3>Home Menu</h3>
+
+        <li>Categories</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </div>
+      <div class="footer-col">
+        <h3>Courses</h3>
+        <li>Development</li>
+        <li>Design</li>
+        <li>Teaching</li>
+        <li>Music</li>
+      </div>
+      <div class="footer-col">
+        <h3>Blog's themes</h3>
+        <li>Development</li>
+        <li>Design</li>
+        <li>Teaching</li>
+        <li>Music</li>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe us...</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email address" />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2022 All rights reserved | This template is made by Raquf
+          Mehdiyev
+        </p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!---------- Footer End ---------->
+
+    <!---------- JS Script Start ---------->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="main.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!---------- JS Script End ---------->
+  </body>
+</html>

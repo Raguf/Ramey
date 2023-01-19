@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!---------- Navigation Start ---------->
+    <nav>
+      <img src="img/ramey-logo.png" alt="Ramey" />
+      <div class="navigation">
+        <ul class="nav-list">
+          <i id="menu-close" class="fas fa-times"></i>
+          <li>
+            <a href="index.html"><i class="fa fa-home"></i>Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="active" href="category.html" class="dropdown_link"
+              ><i class="fa fa-layer-group"></i>Categories<i
+                class="fa fa-chevron-down dropdown_icon"
+              ></i
+            ></a>
+            <div class="megamenu">
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Development</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-code"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-front-end.html">Front-end Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon">
+                    <i class="fa fa-brackets-curly"></i>
+                  </div>
+                  <div class="megamenu_link">
+                    <a href="course-backend.html">Back-end Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-mobile"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-mobile.html">Mobile Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-gamepad"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-game.html">Game Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-database"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-sql.html">SQL Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Design</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-image"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-web-design.html">Web Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-palette"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-graphic-design.html">Graphic Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon">
+                    <i class="fa fa-vest-patches"></i>
+                  </div>
+                  <div class="megamenu_link">
+                    <a href="course-fashion-design.html">Fashion Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-building"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-architectura-design.html"
+                      >Architectural Design</a
+                    >
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-brush"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-interior-design.html">Interior Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Teaching</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-calculator"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-math.html">Math</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-atom"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-physic.html">Physics</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-vial"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-chemistry.html">Chemistry</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-dna"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-biology.html">Biology</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-telescope"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-astronomy.html">Astronomy</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Music</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-guitar"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-guitar.html">Guitar</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-drum"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-drums.html">Drums</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-piano"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-piano.html">Piano</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-saxophone"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-saxophone.html">Saxophone</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-violin"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-violin.html">Violin</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="about.html"><i class="fa fa-address-card"></i>About</a>
+          </li>
+
+          <li>
+            <a href="blog.html"><i class="fa fa-users"></i>Blog</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="shopping-card.html"><i class="fa fa-credit-card"></i></a>
+          </li>
+          <li>
+            <a href="log.sign.html"><i class="fa fa-user"></i></a>
+          </li>
+        </ul>
+        <div class="search-box">
+          <input type="text" placeholder="Type to search..." />
+          <div class="search-btn"><i class="fas fa-search"></i></div>
+          <div class="cansel-btn"><i class="fas fa-times"></i></div>
+          <div class="search-data"></div>
+        </div>
+        <img id="menu-btn" src="img/menu.png" alt="" />
+      </div>
+    </nav>
+    <!---------- Navigation End ---------->
+
+    <!---------- Category Start ---------->
+
+    <section id="about-home">
+      <h2>Category</h2>
+    </section>
+
+    <section id="course">
+      <h1>Our Popular Courses</h1>
+      <p>Expand your skills through blended learning.</p>
+      <div class="course-box">
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-front-end.html';"
+            class="courses"
+          >
+            <img src="img/Categories/Developer/Front-end/c1.jpg" alt="" />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Front-End Development Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$49.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-backend.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Developer/Backend/pexels-pixabay-270348.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Back-end Development Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$49.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-mobile.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Developer/Mobile/azamat-e-eb1cgnNIazI-unsplash.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Mobile Development Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$49.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-game.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Developer/Game/photo-1556438064-2d7646166914.avif"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Game Development Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$49.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-sql.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Developer/SQL/hand-using-laptop-computer-with-virtual-screen-document-online-approve-paperless-quality-assurance-erp-management-concept.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>SQL Development Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$49.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-web-design.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Design/Web/office-responsive-devices-design-website-3d-rendering_72104-3783.webp"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Web Design Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$49.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-graphic-design.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Design/Graphic/emily-bernal-v9vII5gV8Lw-unsplash.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Graphic Design Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$49.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-fashion-design.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Design/Fashion/pexels-ray-piedra-1478477.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Fashion Design Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$12.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-architectura-design.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Design/Architectura/evgeniy-surzhan-lVWozBOVY2M-unsplash.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Architectural Design Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$17.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-interior-design.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Design/Interior/graphic-design-color-swatches-pens-desk-architectural-drawing-with-work-tools-accessories_1421-381.webp"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Interior Design Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$21.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-math.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Teaching/Math/pexels-lumn-167682.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Math Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$9.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-physic.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Teaching/Physic/pexels-jeshootscom-714699.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Physics Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$9.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-chemistry.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Teaching/Chemistry/pexels-kindel-media-8325717.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Chemistry Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$9.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-biology.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Teaching/Biology/african-american-chemist-holding-vegan-beef-sample-analyzing-genetically-modified-vegetarian-meat-biologist-researcher-working-microbiology-medical-expertise-biochemistry-hospital-laboratory.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Biology Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$13.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-astronomy.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Teaching/Astronomy/pexels-lucas-pezeta-2034892.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Astronomy Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$9.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-guitar.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Music/Guitar/jacek-dylag-hUHzaiAHuUc-unsplash.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Guitar Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$9.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-drums.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Music/Drums/josh-sorenson-MjIMc6uhwrE-unsplash.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Drums Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$9.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-piano.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Music/Piano/jordan-whitfield-BhfE1IgcsA8-unsplash.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Piano Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$9.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-saxophone.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Music/Saxophone/engin-akyurt-1E-PFrorFUA-unsplash.jpg"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Saxophone Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$9.99</div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <div
+            onclick="window.location.href='course-violin.html';"
+            class="courses"
+          >
+            <img
+              src="img/Categories/Music/Violin/photo-1566913485233-a9b2afe13757.avif"
+              alt=""
+            />
+            <div class="details">
+              <span>Updated 21/8/21</span>
+              <h6>Violin Course</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(222)</span>
+              </div>
+            </div>
+            <div class="cost">$9.99</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------- Category End ---------->
+
+    <!---------- Footer Start ---------->
+
+    <footer>
+      <div class="footer-col">
+        <h3>Home Menu</h3>
+        <li>Categories</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </div>
+      <div class="footer-col">
+        <h3>Courses</h3>
+        <li>Development</li>
+        <li>Design</li>
+        <li>Teaching</li>
+        <li>Music</li>
+      </div>
+      <div class="footer-col">
+        <h3>Blog's themes</h3>
+        <li>Development</li>
+        <li>Design</li>
+        <li>Teaching</li>
+        <li>Music</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe us...</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email address" />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2022 All rights reserved | This template is made by Raquf
+          Mehdiyev
+        </p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!---------- Footer End ---------->
+
+    <!---------- JS Script Start ---------->
+
+    <script src="main.js"></script>
+
+    <!---------- JS Script End ---------->
+  </body>
+</html>

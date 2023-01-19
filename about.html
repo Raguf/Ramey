@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Website</title>
+
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!---------- Navigation Start ---------->
+    <nav>
+      <img src="img/ramey-logo.png" alt="Ramey" />
+      <div class="navigation">
+        <ul class="nav-list">
+          <i id="menu-close" class="fas fa-times"></i>
+          <li>
+            <a href="index.html"><i class="fa fa-home"></i>Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="category.html" class="dropdown_link"
+              ><i class="fa fa-layer-group"></i>Categories<i
+                class="fa fa-chevron-down dropdown_icon"
+              ></i
+            ></a>
+            <div class="megamenu">
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Development</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-code"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-front-end.html">Front-end Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon">
+                    <i class="fa fa-brackets-curly"></i>
+                  </div>
+                  <div class="megamenu_link">
+                    <a href="course-backend.html">Back-end Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-mobile"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-mobile.html">Mobile Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-gamepad"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-game.html">Game Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-database"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-sql.html">SQL Development</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Design</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-image"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-web-design.html">Web Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-palette"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-graphic-design.html">Graphic Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon">
+                    <i class="fa fa-vest-patches"></i>
+                  </div>
+                  <div class="megamenu_link">
+                    <a href="course-fashion-design.html">Fashion Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-building"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-architectura-design.html"
+                      >Architectural Design</a
+                    >
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-brush"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-interior-design.html">Interior Design</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Teaching</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-calculator"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-math.html">Math</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-atom"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-physic.html">Physics</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-vial"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-chemistry.html">Chemistry</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-dna"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-biology.html">Biology</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-telescope"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-astronomy.html">Astronomy</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item nav_megamenu">Music</li>
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-guitar"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-guitar.html">Guitar</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-drum"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-drums.html">Drums</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-piano"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-piano.html">Piano</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-saxophone"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-saxophone.html">Saxophone</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+
+                <li class="megamenu_item">
+                  <div class="menu_icon"><i class="fa fa-violin"></i></div>
+                  <div class="megamenu_link">
+                    <a href="course-violin.html">Violin</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="active" href="about.html"
+              ><i class="fa fa-address-card"></i>About</a
+            >
+          </li>
+
+          <li>
+            <a href="blog.html"><i class="fa fa-users"></i>Blog</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa fa-address-book"></i>Contact</a>
+          </li>
+          <li>
+            <a href="shopping-card.html"><i class="fa fa-credit-card"></i></a>
+          </li>
+          <li>
+            <a href="log.sign.html"><i class="fa fa-user"></i></a>
+          </li>
+        </ul>
+        <div class="search-box">
+          <input type="text" placeholder="Type to search..." />
+          <div class="search-btn"><i class="fas fa-search"></i></div>
+          <div class="cansel-btn"><i class="fas fa-times"></i></div>
+          <div class="search-data"></div>
+        </div>
+        <img id="menu-btn" src="img/menu.png" alt="" />
+      </div>
+    </nav>
+    <!---------- Navigation End ---------->
+
+    <!---------- About Start ---------->
+
+    <section id="about-home">
+      <h2>About Us</h2>
+    </section>
+
+    <section id="about-container">
+      <div class="about-img">
+        <img src="img/About/pexels-fauxels-3228826.jpg" alt="" />
+      </div>
+      <div class="about-text">
+        <h2>Welcome to Ramey, Improve your skills with best Online Courses</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, id.
+        </p>
+        <div class="about-fe">
+          <img src="img/About/briefcase.png" alt="" />
+          <div class="fe-text">
+            <h5>400+ Courses</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae a
+              fugit asperiores voluptatum quas quo ducimus blanditiis animi
+              officiis recusandae.
+            </p>
+          </div>
+        </div>
+        <div class="about-fe">
+          <img src="img/About/59981.jpg" alt="" />
+          <div class="fe-text">
+            <h5>Lifetime Access</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae a
+              fugit asperiores voluptatum quas quo ducimus blanditiis animi
+              officiis recusandae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------- About End ---------->
+
+    <!---------- Testimonial Start ---------->
+
+    <section id="testimonial">
+      <div class="t_container mySwiper">
+        <h2>What our students says about us?</h2>
+        <div class="testi_content swiper-wrapper">
+          <div class="t_slider swiper-slide">
+            <img src="img/About/Testimonial/Abbas.jfif" alt="" class="image" />
+            <p>
+              Not so long ago I started studying at Ramey as a front-end
+              developer.I can immediately note the good work of the curators.
+              They help all beginners with payment for the course, documents,
+              advise on absolutely any issues 24/7, help solve issues,
+              difficulties that have suddenly arisen, and also go towards all
+              beginners!
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Abbas Mammedli</span>
+              <span class="job">Front-end Developer</span>
+            </div>
+          </div>
+
+          <div class="t_slider swiper-slide">
+            <img src="img/About/Testimonial/Ali.jfif" alt="" class="image" />
+            <p>
+              I have been a regular customer of Ramey for several years now. And
+              I can say that I like everything! From their user-friendly website
+              to lesson materials! Everything is clear and structured! I will
+              definitely recommend to my friends!
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Ali Mammedov</span>
+              <span class="job">Front-end Developer</span>
+            </div>
+          </div>
+
+          <div class="t_slider swiper-slide">
+            <img src="img/About/Testimonial/Islam.jfif" alt="" class="image" />
+            <p>
+              I am very grateful to study here. Competitive team! The care
+              service is top notch. The presentation of materials is excellent.
+              Really like. Accessible and interesting. I really enjoy
+              interacting with the curator. Everything is clear and
+              understandable. Constant updates and additions. Alerts.
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Islam Shiraliyev</span>
+              <span class="job">Front-end Developer</span>
+            </div>
+          </div>
+
+          <div class="t_slider swiper-slide">
+            <img
+              src="img/About/Testimonial/Nariman.jfif"
+              alt=""
+              class="image"
+            />
+            <p>
+              Thanks to the educational site Ramey, I was trained from scratch.
+              They convey information very well and clearly. Help at all stages
+              of learning. I recommend to everyone!
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Nariman Salimov</span>
+              <span class="job">Front-end Developer</span>
+            </div>
+          </div>
+
+          <div class="t_slider swiper-slide">
+            <img src="img/About/Testimonial/Ramin.jfif" alt="" class="image" />
+            <p>
+              Not my first Ramey course, but my first profession! I really like
+              the immersion, the feedback from the curator, who is always ready
+              to answer even the most stupid, as it seems to me, questions. And
+              constant communication with other students, helping each other.
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Ramin Safarli</span>
+              <span class="job">Front-end Developer</span>
+            </div>
+          </div>
+
+          <div class="t_slider swiper-slide">
+            <img
+              src="img/About/Testimonial/Seyfeddin.jfif"
+              alt=""
+              class="image"
+            />
+            <p>
+              I am very grateful to you for your hard work, your site helped me
+              achieve my dream.
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Seyfeddin Nacafli</span>
+              <span class="job">Front-end Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!---------- Testimonial End ---------->
+
+    <section id="trust">
+      <div class="slider">
+        <div class="slider-track">
+          <div class="slide">
+            <img src="img/Brands/html-1.svg" height="100" width="100" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/Brands/css-3.svg" height="100" width="100" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="img/Brands/logo-javascript.svg"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img src="img/Brands/c--4.svg" height="100" width="100" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="img/Brands/kotlin-1.svg"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="img/Brands/python-5.svg"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="img/Brands/microsoft-sql-server-1.svg"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img src="img/Brands/figma-1.svg" height="100" width="100" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="img/Brands/landor-1.svg"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="img/Brands/fashion-company.svg"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="img/Brands/interior-science-innovation-council.svg"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="img/Brands/ranny-architects.svg"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img src="img/Brands/nasa-3.svg" height="100" width="100" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="img/Brands/for-the-love-of-guitar.svg"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="img/Brands/les-maitres-du-piano.svg"
+              height="100"
+              width="100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------- Testimonial End ---------->
+
+    <!---------- Footer Start ---------->
+
+    <footer>
+      <div class="footer-col">
+        <h3>Home Menu</h3>
+        <li>Categories</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </div>
+      <div class="footer-col">
+        <h3>Courses</h3>
+        <li>Development</li>
+        <li>Design</li>
+        <li>Teaching</li>
+        <li>Music</li>
+      </div>
+      <div class="footer-col">
+        <h3>Blog's themes</h3>
+        <li>Development</li>
+        <li>Design</li>
+        <li>Teaching</li>
+        <li>Music</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe us...</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email address" />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2022 All rights reserved | This template is made by Raquf
+          Mehdiyev
+        </p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!---------- Footer End ---------->
+
+    <!---------- JS Script Start ---------->
+    <script src="swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="testimonial.js"></script>
+
+    <!---------- JS Script End ---------->
+  </body>
+</html>
